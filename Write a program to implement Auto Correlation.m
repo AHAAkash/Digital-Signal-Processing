@@ -12,7 +12,7 @@ close all;
 %stem(y);
 
 t=0:1:1000;     % Generate a random noise signal of length equal to the time vector.
-x=randn(1,length(t));
+x=randn(1,length(t)); % implement auto correlation using random gaussian noise 
 subplot(2,1,1);
 plot(t,x);
 y=xcorr(x,x);     % Calculate the autocorrelation of the signal x.
