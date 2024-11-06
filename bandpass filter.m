@@ -37,7 +37,7 @@ ylabel('Amplitude');
 xlabel('Frequency');
 title('FFT Built in');
 
-d = designfilt("bandstopfir",'FilterOrder',15,'CutoffFrequency1',2,'CutoffFrequency2',20,'SampleRate',fs);
+d = designfilt("bandpassfir",'FilterOrder',15,'CutoffFrequency1',2,'CutoffFrequency2',20,'SampleRate',fs);
 afterfilter=filter(d,m); %m=mixed signal
 
 %% FFT after filter
